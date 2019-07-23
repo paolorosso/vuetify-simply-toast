@@ -1,28 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <v-app id="inspire">
+      <!-- Plugins -->
+      <toast></toast>
+
+      <v-btn color="success" @click="$toast.success('Success')">Success</v-btn>
+      <v-btn color="error" @click="$toast.error('Error')">Error</v-btn>
+      <v-btn color="warning" @click="$toast.warning('Warning')">Warning</v-btn>
+      <v-btn color="info" @click="$toast.info('Info')">Info</v-btn>
+    </v-app>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+  
+};
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
