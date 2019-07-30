@@ -1,4 +1,4 @@
-import ToastComponent from "./toast.vue"
+import ToastComponent from "./Toast.vue"
 import {
   EventBus
 } from "./toastEventBus"
